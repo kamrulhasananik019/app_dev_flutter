@@ -4,6 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled4/forget.dart';
 import 'firstpage.dart';
+import 'homepage/profile_main.dart';
 import 'signup.dart';
 class homepage extends StatefulWidget {
 
@@ -153,6 +154,23 @@ class _homepageState extends State<homepage> {
                       context,
                       MaterialPageRoute(
                         builder: (context) => signup(),
+                      ),
+                    );
+                  },
+                  child: Text("Have an account? Sign Up",
+                    style: TextStyle(color: Colors.lightGreenAccent,fontSize: 25),),
+                ),
+              ),
+
+              Container(
+                height: 100,
+                child: TextButton(
+                  onPressed: () {
+                    print("button press done");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => profile(),
                       ),
                     );
                   },

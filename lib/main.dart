@@ -14,7 +14,7 @@ class login extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: homepage_dashboard(),
+      home: homepage(),
     );
   }
 }
